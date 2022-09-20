@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta lang="pt-br">
+        <title>Animações com Angular JS</title>
+
+        <!--  =====================================  JS  ============================================ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.8.2/angular-animate.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!--  =====================================  JS  ============================================ -->
+
+        <!--  ===================================== UTIL ============================================ -->
+        <script src="utilAnimate.js"></script>
+        <!--  ===================================== UTIL ============================================ -->
+
+
+        <!--  =====================================  CSS ============================================ -->
+        <link rel="stylesheet" href="app.css">
+        <!--  =====================================  CSS ============================================ -->
+
+
+        <!--  ================================== CONTROLLER ========================================= -->
+        <script src="controller.js"></script>
+        <!--  ================================== CONTROLLER ========================================= -->
+
+
+
+    </head>
+    <body ng-app="myApp" ng-controller="myCtrl">
+
+
+    <div>
+
+        <button ng-click="btn_avancar()">Avançar</button>
+        <button ng-click="btn_regredir()">Regredir</button>
+
+    </div>
+
+
+
+    <div  ng-class="entrando_ou_saindo(avancando, sub_div[0])" ng-show="sub_div[0]" style="background-color: red">
+
+        <center><img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Girl in a jacket" width="300" height="300">
+        </center>
+    </div>
+
+    <div ng-class="entrando_ou_saindo(avancando, sub_div[1])" ng-show="sub_div[1]"  style="background-color: blue">
+
+        <center><img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Girl in a jacket" width="300" height="300">
+        </center>
+
+    </div>
+
+    <div ng-class="entrando_ou_saindo(avancando, sub_div[2])" ng-show="sub_div[2]"  style="background-color: green">
+
+        <center><img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Girl in a jacket" width="300" height="300">
+        </center>
+
+    </div>
+
+    <div ng-class="entrando_ou_saindo(avancando, sub_div[3])" ng-show="sub_div[3]"  style="background-color: yellow">
+
+        <center><img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Girl in a jacket" width="300" height="300">
+        </center>
+
+    </div>
+
+    <div ng-class="entrando_ou_saindo(avancando, sub_div[4])" ng-show="sub_div[4]"  style="background-color: white">
+
+        <center><img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Girl in a jacket" width="300" height="300">
+        </center>
+
+    </div>
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+</html>
